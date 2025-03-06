@@ -1,0 +1,11 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<script src="../static/js.script.js" th:src="@{/js/script.js}"></script>
+</head>
+<h1> View Students</h1>
+<h3 th:each="student:${students}">
+    <a href="#" th:onclick="'getStudent('+${student.id}+')'"
+       th:text="${student.name}"> John </a>
+    <div th:id="'student'+ ${student.id}"></div>
+</h3>
+</html>
