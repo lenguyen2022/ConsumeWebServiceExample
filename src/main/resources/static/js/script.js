@@ -13,7 +13,6 @@ function getStudent(id){
                 textToDisplay += "GRADE: "+ student.grade + "<br>";
                 textToDisplay += "LETTER GRADE: " + student.letterGrade + "<br>";
                 document.getElementById('student' + id).innerHTML = textToDisplay;
-
             })
 
     }
