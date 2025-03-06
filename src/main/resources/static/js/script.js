@@ -1,6 +1,5 @@
 function getStudent(id){
 
-
     if(document.getElementById("student"+id).innerText==""){
 
         //get the student object from the web service URL
@@ -14,7 +13,6 @@ function getStudent(id){
                 textToDisplay += "LETTER GRADE: " + student.letterGrade + "<br>";
                 document.getElementById('student' + id).innerHTML = textToDisplay;
             })
-
     }
     else{
         document.getElementById("student"+id).innerHTML="";
